@@ -13,4 +13,9 @@ public class Queue<K> {
         linkedList.appendNode(newNode);
     }
 
+    // Dequeue
+    public INode<K> dequeue() {
+        return linkedList.popFirstNode();
+    }
+
 }

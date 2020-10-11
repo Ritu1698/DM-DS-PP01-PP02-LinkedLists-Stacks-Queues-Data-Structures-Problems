@@ -49,13 +49,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.StackTest.given3Numbers_whenPoppedFromStackTillEmpty_shouldReturnNull">
-    <configuration name="LinkedListTest.givenThreeNumbers_whenLinkedTogether_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria">
+    <configuration name="QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.LinkedListTest.givenThreeNumbers_whenLinkedTogether_shouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -147,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria" />
         <item itemvalue="Gradle.StackTest.given3Numbers_whenPoppedFromStackTillEmpty_shouldReturnNull" />
         <item itemvalue="Gradle.StackTest.given3Numbers_whenPeekingIntoStack_shouldReturnFirstElement" />
         <item itemvalue="Gradle.StackTest.givenThreeNumbers_whenPushedToStack_shouldHaveHeadAtTopTailAtBottom" />
         <item itemvalue="Gradle.StackTest.given3Numbers_whenPushedToStack_shouldPassStackCriteria" />
-        <item itemvalue="Gradle.LinkedListTest.givenThreeNumbers_whenLinkedTogether_shouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -167,22 +167,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1602418810859">
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1602419634601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602418810859" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1602418810859">
+    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
+    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1602419634601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602418810859" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1602418810859">
+    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
+    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1602419634601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602418810859" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1602418810859">
+    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
+    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1602419634601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602418810859" />
+    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
+    <state x="319" y="307" width="1063" height="508" key="dock-window-1" timestamp="1602419920501">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="319" y="307" width="1063" height="508" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1602419920501" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602395141166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
