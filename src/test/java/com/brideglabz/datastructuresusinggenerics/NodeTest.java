@@ -6,6 +6,7 @@ import com.bridgelabz.datastructuresusinggenerics.Node;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class NodeTest {
@@ -117,6 +118,22 @@ public class NodeTest {
                 && linkedList.getHead().getNext().getNext().equals(myNewNode)
                 && linkedList.getTail().equals(thirdNode);
         assertTrue(result);
+    }
+
+    @Test
+    public void givenThreeNumbers_whenLastElementDeleted_shouldShowDecreaseInSize() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(40);
+        Node<Integer> fourthNode = new Node<>(70);
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
+        linkedList.appendNode(firstNode);
+        linkedList.appendNode(secondNode);
+        linkedList.appendNode(thirdNode);
+        linkedList.appendNode(fourthNode);
+        linkedList.deleteNode(40);
+        int result = linkedList.getSizeOfLinkedList();
+        assertEquals(3,result);
     }
 
 }

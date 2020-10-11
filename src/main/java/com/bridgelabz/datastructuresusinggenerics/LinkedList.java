@@ -3,6 +3,7 @@ package com.bridgelabz.datastructuresusinggenerics;
 public class LinkedList<K> {
     private INode<K> headNode;
     private INode<K> tailNode;
+    private static int sizeOfLinkedList;
 
     // Getter for Head
     public INode getHead() {
@@ -24,14 +25,21 @@ public class LinkedList<K> {
         this.tailNode = tail;
     }
 
+    // Function to find size of linked list
+    public int getSizeOfLinkedList() {
+        return sizeOfLinkedList;
+    }
+
     // Constructor
     public LinkedList() {
         this.headNode = null;
         this.tailNode = null;
+        this.sizeOfLinkedList = 0;
     }
 
     // Function to Add Node to Linked List
     public void addNode(INode newNode) {
+        sizeOfLinkedList++;
         if (this.tailNode == null) {
             this.tailNode = newNode;
         }
@@ -46,6 +54,7 @@ public class LinkedList<K> {
 
     // Function to Append Node to Linked List
     public void appendNode(INode newNode) {
+        sizeOfLinkedList++;
         if (this.tailNode == null) {
             this.tailNode = newNode;
         }
@@ -60,6 +69,7 @@ public class LinkedList<K> {
 
     // Function to Insert Node At Specific Position
     public void insertNodeAtPosition(INode firstNode, INode newNode) {
+        sizeOfLinkedList++;
         INode tempNode = firstNode.getNext();
         firstNode.setNext(newNode);
         newNode.setNext(tempNode);
@@ -67,6 +77,7 @@ public class LinkedList<K> {
 
     // Function to Pop First Node
     public INode popFirstNode() {
+        sizeOfLinkedList--;
         INode tempNode = this.headNode;
         this.headNode = headNode.getNext();
         return tempNode;
@@ -74,6 +85,7 @@ public class LinkedList<K> {
 
     // Function to Pop Last Node
     public INode popLastNode() {
+        sizeOfLinkedList--;
         INode tempNode = this.headNode;
         while (!tempNode.getNext().equals(tailNode)) {
             tempNode = tempNode.getNext();
@@ -85,7 +97,7 @@ public class LinkedList<K> {
     }
 
     // Function to Search A node If Present
-    public INode<K> searchForNode(K key) {
+    public INode searchForNode(K key) {
         INode<K> tempNode = this.headNode;
         while (!tempNode.getKey().equals(key)) {
             tempNode = tempNode.getNext();
@@ -95,8 +107,20 @@ public class LinkedList<K> {
 
     // Function to search node with given key and then insert new node after
     public void insertNodeAfterKeyPosition(K key, INode newNode) {
+        sizeOfLinkedList++;
         INode tempNode = searchForNode(key);
         insertNodeAtPosition(tempNode, newNode);
+    }
+
+    public INode deleteNode(K key) {
+        sizeOfLinkedList--;
+        INode deleteNode = searchForNode(key);
+        INode tempNode = this.headNode;
+        while (!tempNode.getNext().equals(deleteNode)) {
+            tempNode = tempNode.getNext();
+        }
+        tempNode.setNext(deleteNode.getNext());
+        return deleteNode;
     }
 
 }
