@@ -1,6 +1,6 @@
 package com.bridgelabz.datastructuresusinggenerics;
 
-public class LinkedList {
+public class LinkedList<K> {
     public INode headNode;
     public INode tailNode;
 
@@ -69,6 +69,19 @@ public class LinkedList {
         tempNode = tempNode.getNext();
         tailNode.setNext(null);
         return tempNode;
+    }
+
+    public INode searchForNode(INode keyNode) {
+        if (this.headNode.equals(keyNode))
+            return this.headNode;
+
+        INode tempNode = headNode;
+        while (tempNode != null) {
+            tempNode = tempNode.getNext();
+            if (tempNode.equals(keyNode))
+                return tempNode;
+        }
+        return null;
     }
 
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.brideglabz.datastructuresusinggenerics.NodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-11T04:37:49" hostname="LAPTOP-RGI87V6B" time="0.004">
+<testsuite name="com.brideglabz.datastructuresusinggenerics.NodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-11T05:28:22" hostname="LAPTOP-RGI87V6B" time="0.005">
   <properties/>
-  <testcase name="givenThreeNumbers_whenPoppedLastNode_ShouldReturnTailAtSecondLastNode" classname="com.brideglabz.datastructuresusinggenerics.NodeTest" time="0.004"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenThreeNumbers_whenSearchedForAnyNode_ShouldReturnThatNodeIfPresent" classname="com.brideglabz.datastructuresusinggenerics.NodeTest" time="0.005"/>
+  <system-out><![CDATA[null
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
