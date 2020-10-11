@@ -121,7 +121,7 @@ public class NodeTest {
     }
 
     @Test
-    public void givenThreeNumbers_whenLastElementDeleted_shouldShowDecreaseInSize() {
+    public void givenFourNumbers_whenLastElementDeleted_shouldShowDecreaseInSize() {
         Node<Integer> firstNode = new Node<>(56);
         Node<Integer> secondNode = new Node<>(30);
         Node<Integer> thirdNode = new Node<>(40);
@@ -134,6 +134,22 @@ public class NodeTest {
         linkedList.deleteNode(40);
         int result = linkedList.getSizeOfLinkedList();
         assertEquals(3,result);
+    }
+
+    @Test
+    public void givenFourNumbers_whenAddedInSortedLinkedList_ShouldBeSortedResult() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> mySecondNode = new Node<>(30);
+        Node<Integer> myThirdNode = new Node<>(70);
+        Node<Integer> myNewNode = new Node<>(40);
+        LinkedList linkedList = new LinkedList();
+        linkedList.sortedLinkedList(firstNode);
+        linkedList.sortedLinkedList(mySecondNode);
+        linkedList.sortedLinkedList(myNewNode);
+        linkedList.sortedLinkedList(myThirdNode);
+        boolean result = linkedList.getHead().equals(mySecondNode) && linkedList.getHead().getNext().equals(myNewNode)
+                &&linkedList.getHead().getNext().getNext().equals(firstNode)&&linkedList.getHead().getNext().getNext().getNext().equals(myThirdNode);
+        Assert.assertTrue(result);
     }
 
 }

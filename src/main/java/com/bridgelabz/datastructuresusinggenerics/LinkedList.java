@@ -112,6 +112,7 @@ public class LinkedList<K> {
         insertNodeAtPosition(tempNode, newNode);
     }
 
+    // Function to delete node with given key
     public INode deleteNode(K key) {
         sizeOfLinkedList--;
         INode deleteNode = searchForNode(key);
@@ -121,6 +122,24 @@ public class LinkedList<K> {
         }
         tempNode.setNext(deleteNode.getNext());
         return deleteNode;
+    }
+
+    public void sortedLinkedList(INode newNode) {
+        sizeOfLinkedList++;
+        INode currentNode = this.headNode;
+        INode prevNode = null;
+        while (currentNode != null && (int) newNode.getKey() > (int) currentNode.getKey()) {
+            prevNode = currentNode;
+            currentNode = currentNode.getNext();
+
+        }
+        if (prevNode == null) {
+            this.headNode = newNode;
+        } else {
+            prevNode.setNext(newNode);
+        }
+        newNode.setNext(currentNode);
+
     }
 
 }

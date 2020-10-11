@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.brideglabz.datastructuresusinggenerics.NodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-11T06:23:22" hostname="LAPTOP-RGI87V6B" time="0.004">
+<testsuite name="com.brideglabz.datastructuresusinggenerics.NodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-11T06:36:38" hostname="LAPTOP-RGI87V6B" time="0.003">
   <properties/>
-  <testcase name="givenThreeNumbers_whenLastElementDeleted_shouldShowDecreaseInSize" classname="com.brideglabz.datastructuresusinggenerics.NodeTest" time="0.004"/>
+  <testcase name="givenFewNumbersShouldBeSorted" classname="com.brideglabz.datastructuresusinggenerics.NodeTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
