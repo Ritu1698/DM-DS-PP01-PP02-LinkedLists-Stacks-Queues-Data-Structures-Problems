@@ -12,6 +12,7 @@ public class Stack<K> {
     public void push(INode<K> newNode) {
         linkedList.addNode(newNode);
     }
+
     // Peek stack
     public INode peek() {
         return linkedList.getHead();

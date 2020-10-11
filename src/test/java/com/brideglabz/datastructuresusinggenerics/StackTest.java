@@ -39,7 +39,7 @@ public class StackTest {
     }
 
     @Test
-    public void given3Numbers_whenPoppedFromStackTillEmpty_shouldReturnNull() {
+    public void givenThreeNumbers_whenPoppedFromStackTillEmpty_shouldReturnNull() {
         Node<Integer> myThirdNode = new Node<>(56);
         Node<Integer> mySecondNode = new Node<>(30);
         Node<Integer> myFirstNode = new Node<>(70);
