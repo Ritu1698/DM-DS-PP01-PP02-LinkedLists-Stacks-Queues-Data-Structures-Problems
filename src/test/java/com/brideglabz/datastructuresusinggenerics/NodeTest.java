@@ -46,4 +46,17 @@ public class NodeTest {
                 && linkedList.tailNode.equals(thirdNode);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void given3NumbersShouldPassHeadFromEndAtSpecificPosition() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(70);
+        Node<Integer> nodeBetweenFirstAndSecondNode = new Node<>(30);
+        LinkedList linkedList = new LinkedList();
+        linkedList.appendNode(firstNode);
+        linkedList.appendNode(secondNode);
+        linkedList.insertNodeAtPosition(firstNode, nodeBetweenFirstAndSecondNode);
+        boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(nodeBetweenFirstAndSecondNode) && linkedList.tailNode.equals(secondNode);
+        Assert.assertTrue(result);
+    }
 }

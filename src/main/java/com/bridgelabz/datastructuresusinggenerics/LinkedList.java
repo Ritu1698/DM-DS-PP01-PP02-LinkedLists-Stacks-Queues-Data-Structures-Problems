@@ -45,5 +45,11 @@ public class LinkedList {
         }
     }
 
+    //Function To Insert Node After a ParticularNode to Linked List
+    public void insertNodeAtPosition(INode priorNode, INode newNode) {
+        INode tempNode = priorNode.getNext();
+        priorNode.setNext(newNode);
+        newNode.setNext(tempNode);
+    }
 
 }
