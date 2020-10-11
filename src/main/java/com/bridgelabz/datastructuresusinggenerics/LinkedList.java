@@ -52,4 +52,11 @@ public class LinkedList {
         newNode.setNext(tempNode);
     }
 
+    //Function To Pop First Node from Linked List
+    public INode popFirstNode() {
+        INode tempNode = this.headNode;
+        this.headNode = headNode.getNext();
+        return tempNode;
+    }
+
 }

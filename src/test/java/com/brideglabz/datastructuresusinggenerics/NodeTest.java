@@ -48,7 +48,7 @@ public class NodeTest {
     }
 
     @Test
-    public void given3NumbersShouldPassHeadFromEndAtSpecificPosition() {
+    public void givenThreeNumbers_whenInsertAfterAPosition_ShouldReturnThatNodeAtThatPosition() {
         Node<Integer> firstNode = new Node<>(56);
         Node<Integer> secondNode = new Node<>(70);
         Node<Integer> nodeBetweenFirstAndSecondNode = new Node<>(30);
@@ -59,4 +59,19 @@ public class NodeTest {
         boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(nodeBetweenFirstAndSecondNode) && linkedList.tailNode.equals(secondNode);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void givenThreeNumbers_whenPoppedFirstNode_ShouldReturnHeadAtSecondNode() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(70);
+        LinkedList linkedList = new LinkedList();
+        linkedList.appendNode(firstNode);
+        linkedList.appendNode(secondNode);
+        linkedList.appendNode(thirdNode);
+        linkedList.popFirstNode();
+        boolean result = linkedList.headNode.equals(secondNode) && linkedList.headNode.getNext().equals(thirdNode);
+        Assert.assertTrue(result);
+    }
+
 }
