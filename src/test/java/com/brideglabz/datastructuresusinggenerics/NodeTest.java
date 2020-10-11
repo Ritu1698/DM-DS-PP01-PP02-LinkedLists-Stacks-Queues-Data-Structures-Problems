@@ -21,15 +21,29 @@ public class NodeTest {
 
     @Test
     public void givenThreeNumbers_whenAddedOneAfterAnother_ShouldReturnHeadAtTop() {
-        Node<Integer> myFirstNode = new Node<>(56);
-        Node<Integer> mySecondNode = new Node<>(30);
-        Node<Integer> myThirdNode = new Node<>(70);
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(70);
         LinkedList linkedList = new LinkedList();
-        linkedList.add(myFirstNode);
-        linkedList.add(mySecondNode);
-        linkedList.add(myThirdNode);
-        boolean result = linkedList.headNode.equals(myThirdNode) && linkedList.headNode.getNext().equals(mySecondNode)
-                && linkedList.tailNode.equals(myFirstNode);
+        linkedList.addNode(firstNode);
+        linkedList.addNode(secondNode);
+        linkedList.addNode(thirdNode);
+        boolean result = linkedList.headNode.equals(thirdNode) && linkedList.headNode.getNext().equals(secondNode)
+                && linkedList.tailNode.equals(firstNode);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void givenThreeNumbers_whenAppendedOneAfterAnother_ShouldReturnHeadAtBottom() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(70);
+        LinkedList linkedList = new LinkedList();
+        linkedList.appendNode(firstNode);
+        linkedList.appendNode(secondNode);
+        linkedList.appendNode(thirdNode);
+        boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(secondNode)
+                && linkedList.tailNode.equals(thirdNode);
         Assert.assertTrue(result);
     }
 }

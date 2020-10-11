@@ -11,7 +11,7 @@ public class LinkedList {
     }
 
     //Function To Add Node to Linked List
-    public void add(INode newNode) {
+    public void addNode(INode newNode) {
 
         if (this.tailNode == null) {
             this.tailNode = newNode;
@@ -24,5 +24,26 @@ public class LinkedList {
             this.headNode.setNext(tempNode);
         }
     }
+
+    //Function To Append Node to Linked List
+    public void appendNode(INode newNode) {
+        if (this.tailNode == null) {
+            this.tailNode = newNode;
+        }
+
+        if (this.headNode == null) {
+            this.headNode = newNode;
+        } else {
+            INode tempNode = this.headNode;
+            while (tempNode.getNext() != null) {
+                tempNode = tempNode.getNext();
+            }
+
+            tempNode.setNext(newNode);
+            this.tailNode = newNode;
+
+        }
+    }
+
 
 }
