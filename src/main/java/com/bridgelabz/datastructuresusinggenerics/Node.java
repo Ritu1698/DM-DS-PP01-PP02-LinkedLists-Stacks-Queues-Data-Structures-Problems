@@ -1,8 +1,8 @@
 package com.bridgelabz.datastructuresusinggenerics;
 
-public class Node<T> {
+public class Node<T> implements INode<T> {
     private T key;
-    private Node next;
+    private INode<T> next;
 
     // Parameterized Constructor
     public Node(T key) {
@@ -21,12 +21,12 @@ public class Node<T> {
     }
 
     // Getter for Next
-    public Node getNext() {
+    public INode<T> getNext() {
         return next;
     }
 
     // Setter for Next
-    public void setNext(Node next) {
+    public void setNext(INode<T> next) {
         this.next = next;
     }
 }

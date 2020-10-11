@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.brideglabz.datastructuresusinggenerics.NodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-11T03:34:41" hostname="LAPTOP-RGI87V6B" time="0.006">
+  <properties/>
+  <testcase name="givenThreeNumbers_whenLinkedTogether_shouldReturnTrue" classname="com.brideglabz.datastructuresusinggenerics.NodeTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
