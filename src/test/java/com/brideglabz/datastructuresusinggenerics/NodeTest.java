@@ -73,5 +73,18 @@ public class NodeTest {
         boolean result = linkedList.headNode.equals(secondNode) && linkedList.headNode.getNext().equals(thirdNode);
         Assert.assertTrue(result);
     }
+    @Test
+    public void givenThreeNumbers_whenPoppedLastNode_ShouldReturnTailAtSecondLastNode() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(70);
+        LinkedList linkedList = new LinkedList();
+        linkedList.appendNode(firstNode);
+        linkedList.appendNode(secondNode);
+        linkedList.appendNode(thirdNode);
+        linkedList.popLastNode();
+        boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(linkedList.tailNode);
+        Assert.assertTrue(result);
+    }
 
 }

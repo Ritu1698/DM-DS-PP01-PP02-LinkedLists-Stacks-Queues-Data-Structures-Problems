@@ -59,4 +59,17 @@ public class LinkedList {
         return tempNode;
     }
 
+    //Function To Pop Last Node from Linked List
+    public INode popLastNode() {
+        INode tempNode = this.headNode;
+        while (!tempNode.getNext().equals(tailNode)) {
+            tempNode = tempNode.getNext();
+        }
+        this.tailNode = tempNode;
+        tempNode = tempNode.getNext();
+        tailNode.setNext(null);
+        return tempNode;
+    }
+
+
 }
