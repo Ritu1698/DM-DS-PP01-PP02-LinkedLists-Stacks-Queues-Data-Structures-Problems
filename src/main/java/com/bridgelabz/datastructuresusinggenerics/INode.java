@@ -1,12 +1,11 @@
 package com.bridgelabz.datastructuresusinggenerics;
 
-public interface INode<T> {
-    T getKey();
+public interface INode<K> {
+    K getKey();
 
-    void setKey(T key);
+    void setKey(K key);
 
-    INode<T> getNext();
+    INode<K> getNext();
 
-    void setNext(INode<T> next);
+    void setNext(INode<K> next);
 }
-

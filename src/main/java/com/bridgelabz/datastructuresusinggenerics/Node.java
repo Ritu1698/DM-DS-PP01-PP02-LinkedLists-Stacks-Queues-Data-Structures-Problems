@@ -1,32 +1,32 @@
 package com.bridgelabz.datastructuresusinggenerics;
 
-public class Node<T> implements INode<T> {
-    private T key;
-    private INode<T> next;
+public class Node<K> implements INode<K> {
+    private K key;
+    private INode<K> next;
 
-    // Parameterized Constructor
-    public Node(T key) {
-        this.key = null;
+    // Constructor
+    public Node(K key) {
+        this.key = key;
         this.next = null;
     }
 
     // Getter for Key
-    public T getKey() {
+    public K getKey() {
         return key;
     }
 
     // Setter for Key
-    public void setKey(T key) {
+    public void setKey(K key) {
         this.key = key;
     }
 
     // Getter for Next
-    public INode<T> getNext() {
+    public INode<K> getNext() {
         return next;
     }
 
     // Setter for Next
-    public void setNext(INode<T> next) {
+    public void setNext(INode<K> next) {
         this.next = next;
     }
 }

@@ -1,18 +1,37 @@
 package com.bridgelabz.datastructuresusinggenerics;
 
 public class LinkedList<K> {
-    public INode headNode;
-    public INode tailNode;
+    private INode<K> headNode;
+    private INode<K> tailNode;
 
-    //Constructor
+    // Getter for Head
+    public INode getHead() {
+        return headNode;
+    }
+
+    // Setter for Head
+    public void setHead(INode headNode) {
+        this.headNode = headNode;
+    }
+
+    // Getter for Tail
+    public INode getTail() {
+        return tailNode;
+    }
+
+    // Setter for Tail
+    public void setTail(INode tail) {
+        this.tailNode = tail;
+    }
+
+    // Constructor
     public LinkedList() {
         this.headNode = null;
         this.tailNode = null;
     }
 
-    //Function To Add Node to Linked List
+    // Function to Add Node to Linked List
     public void addNode(INode newNode) {
-
         if (this.tailNode == null) {
             this.tailNode = newNode;
         }
@@ -25,41 +44,35 @@ public class LinkedList<K> {
         }
     }
 
-    //Function To Append Node to Linked List
+    // Function to Append Node to Linked List
     public void appendNode(INode newNode) {
         if (this.tailNode == null) {
             this.tailNode = newNode;
         }
-
         if (this.headNode == null) {
             this.headNode = newNode;
         } else {
-            INode tempNode = this.headNode;
-            while (tempNode.getNext() != null) {
-                tempNode = tempNode.getNext();
-            }
-
-            tempNode.setNext(newNode);
+            this.tailNode.setNext(newNode);
             this.tailNode = newNode;
-
         }
+
     }
 
-    //Function To Insert Node After a ParticularNode to Linked List
-    public void insertNodeAtPosition(INode priorNode, INode newNode) {
-        INode tempNode = priorNode.getNext();
-        priorNode.setNext(newNode);
+    // Function to Insert Node At Specific Position
+    public void insertNodeAtPosition(INode firstNode, INode newNode) {
+        INode tempNode = firstNode.getNext();
+        firstNode.setNext(newNode);
         newNode.setNext(tempNode);
     }
 
-    //Function To Pop First Node from Linked List
+    // Function to Pop First Node
     public INode popFirstNode() {
         INode tempNode = this.headNode;
         this.headNode = headNode.getNext();
         return tempNode;
     }
 
-    //Function To Pop Last Node from Linked List
+    // Function to Pop Last Node
     public INode popLastNode() {
         INode tempNode = this.headNode;
         while (!tempNode.getNext().equals(tailNode)) {
@@ -71,18 +84,19 @@ public class LinkedList<K> {
         return tempNode;
     }
 
-    public INode searchForNode(INode keyNode) {
-        if (this.headNode.equals(keyNode))
-            return this.headNode;
-
-        INode tempNode = headNode;
-        while (tempNode != null) {
+    // Function to Search A node If Present
+    public INode<K> searchForNode(K key) {
+        INode<K> tempNode = this.headNode;
+        while (!tempNode.getKey().equals(key)) {
             tempNode = tempNode.getNext();
-            if (tempNode.equals(keyNode))
-                return tempNode;
         }
-        return null;
+        return tempNode;
     }
 
+    // Function to search node with given key and then insert new node after
+    public void insertNodeAfterKeyPosition(K key, INode newNode) {
+        INode tempNode = searchForNode(key);
+        insertNodeAtPosition(tempNode, newNode);
+    }
 
 }

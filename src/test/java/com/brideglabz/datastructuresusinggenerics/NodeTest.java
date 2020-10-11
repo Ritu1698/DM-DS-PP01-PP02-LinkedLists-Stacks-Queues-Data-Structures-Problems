@@ -29,8 +29,8 @@ public class NodeTest {
         linkedList.addNode(firstNode);
         linkedList.addNode(secondNode);
         linkedList.addNode(thirdNode);
-        boolean result = linkedList.headNode.equals(thirdNode) && linkedList.headNode.getNext().equals(secondNode)
-                && linkedList.tailNode.equals(firstNode);
+        boolean result = linkedList.getHead().equals(thirdNode) && linkedList.getHead().getNext().equals(secondNode)
+                && linkedList.getTail().equals(firstNode);
         Assert.assertTrue(result);
     }
 
@@ -43,8 +43,8 @@ public class NodeTest {
         linkedList.appendNode(firstNode);
         linkedList.appendNode(secondNode);
         linkedList.appendNode(thirdNode);
-        boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(secondNode)
-                && linkedList.tailNode.equals(thirdNode);
+        boolean result = linkedList.getHead().equals(firstNode) && linkedList.getHead().getNext().equals(secondNode)
+                && linkedList.getTail().equals(thirdNode);
         Assert.assertTrue(result);
     }
 
@@ -57,7 +57,7 @@ public class NodeTest {
         linkedList.appendNode(firstNode);
         linkedList.appendNode(secondNode);
         linkedList.insertNodeAtPosition(firstNode, nodeBetweenFirstAndSecondNode);
-        boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(nodeBetweenFirstAndSecondNode) && linkedList.tailNode.equals(secondNode);
+        boolean result = linkedList.getHead().equals(firstNode) && linkedList.getHead().getNext().equals(nodeBetweenFirstAndSecondNode) && linkedList.getTail().equals(secondNode);
         Assert.assertTrue(result);
     }
 
@@ -71,7 +71,7 @@ public class NodeTest {
         linkedList.appendNode(secondNode);
         linkedList.appendNode(thirdNode);
         linkedList.popFirstNode();
-        boolean result = linkedList.headNode.equals(secondNode) && linkedList.headNode.getNext().equals(thirdNode);
+        boolean result = linkedList.getHead().equals(secondNode) && linkedList.getHead().getNext().equals(thirdNode);
         Assert.assertTrue(result);
     }
 
@@ -85,7 +85,7 @@ public class NodeTest {
         linkedList.appendNode(secondNode);
         linkedList.appendNode(thirdNode);
         linkedList.popLastNode();
-        boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(linkedList.tailNode);
+        boolean result = linkedList.getHead().equals(firstNode) && linkedList.getHead().getNext().equals(linkedList.getTail());
         Assert.assertTrue(result);
     }
 
@@ -98,12 +98,25 @@ public class NodeTest {
         linkedList.appendNode(firstNode);
         linkedList.appendNode(secondNode);
         linkedList.appendNode(thirdNode);
-        INode tempNode = linkedList.searchForNode(secondNode);
-        System.out.println(tempNode.getKey());
-        //Assert.assertEquals(mySecondNode, tempNode);
-        boolean result = linkedList.headNode.equals(firstNode) && linkedList.headNode.getNext().equals(secondNode)
-                && linkedList.tailNode.equals(thirdNode);
-        Assert.assertTrue(result);
+        INode tempNode = linkedList.searchForNode(30);
+        Assert.assertEquals(secondNode, tempNode);
+    }
+
+    @Test
+    public void givenThreeNumbers_whenNodeAfterSearchedNode_ShouldReturnThatNodeInLinkedList() {
+        Node<Integer> firstNode = new Node<>(56);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(70);
+        Node<Integer> myNewNode = new Node<>(40);
+        LinkedList linkedList = new LinkedList();
+        linkedList.appendNode(firstNode);
+        linkedList.appendNode(secondNode);
+        linkedList.appendNode(thirdNode);
+        linkedList.insertNodeAfterKeyPosition(30, myNewNode);
+        boolean result = linkedList.getHead().equals(firstNode) && linkedList.getHead().getNext().equals(secondNode)
+                && linkedList.getHead().getNext().getNext().equals(myNewNode)
+                && linkedList.getTail().equals(thirdNode);
+        assertTrue(result);
     }
 
 }
