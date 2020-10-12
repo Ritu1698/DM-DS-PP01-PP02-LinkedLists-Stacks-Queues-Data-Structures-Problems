@@ -14,8 +14,6 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.brideglabz.datastructuresusinggenerics.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.brideglabz.datastructuresusinggenerics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/datastructuresusinggenerics/LinkedListForHashOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/datastructuresusinggenerics/LinkedListForHashOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/datastructuresusinggenerics/HashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/datastructuresusinggenerics/HashMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AddressBook" />
   </component>
-  <component name="RunManager" selected="Gradle.HashMapTest.givenSentence_whenWordIsRemovedFromLinkedList_shouldReturnFrequencyOfDeletedWord">
+  <component name="RunManager" selected="Gradle.BinaryTreeTest.given3Numbers_whenAddedToBinarySearchTree_shouldReturnSizeThree">
+    <configuration name="BinaryTreeTest.given3Numbers_whenAddedToBinarySearchTree_shouldReturnSizeThree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.BinaryTreeTest.given3Numbers_whenAddedToBinarySearchTree_shouldReturnSizeThree&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="HashMapTest.givenASentence_whenWordIsRemoved_shouldReturnDeletedWordFrequency" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -91,25 +108,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnParanoidFrequency&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnWordFrequency" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnWordFrequency&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -163,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BinaryTreeTest.given3Numbers_whenAddedToBinarySearchTree_shouldReturnSizeThree" />
         <item itemvalue="Gradle.HashMapTest.givenSentence_whenWordIsRemovedFromLinkedList_shouldReturnFrequencyOfDeletedWord" />
         <item itemvalue="Gradle.HashMapTest.givenASentence_whenWordIsRemoved_shouldReturnDeletedWordFrequency" />
         <item itemvalue="Gradle.HashMapTest.givenLargeSentence_whenWordsAddedToList_shouldReturnWordFrequencyOfAParticularWord" />
         <item itemvalue="Gradle.HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnParanoidFrequency" />
-        <item itemvalue="Gradle.HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnWordFrequency" />
       </list>
     </recent_temporary>
   </component>
@@ -187,22 +185,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602482748213" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1602505541091">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1602507537890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602505541091" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1602505541091">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602507537890" />
+    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1602507537890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602505541091" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1602505541091">
+    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602507537890" />
+    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1602507537889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602505541091" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1602505541091">
+    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602507537889" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1602507537890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602505541091" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602507537890" />
     <state x="319" y="307" width="1063" height="508" maximized="true" key="dock-window-1" timestamp="1602420335377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
