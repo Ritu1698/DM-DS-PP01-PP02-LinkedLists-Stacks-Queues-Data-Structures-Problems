@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89071f79-1f02-4cea-b565-27566d8b9423" name="Default Changelist" comment="" />
+    <list default="true" id="89071f79-1f02-4cea-b565-27566d8b9423" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.brideglabz.datastructuresusinggenerics.QueueTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.brideglabz.datastructuresusinggenerics.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.brideglabz.datastructuresusinggenerics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.brideglabz.datastructuresusinggenerics.QueueTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/datastructuresusinggenerics/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/datastructuresusinggenerics/LinkedList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +48,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -48,14 +65,53 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AddressBook" />
   </component>
-  <component name="RunManager" selected="Gradle.QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria">
+  <component name="RunManager" selected="Gradle.HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnWordFrequency">
+    <configuration name="HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnWordFrequency" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnWordFrequency&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="QueueTest.givenTreeNumbers_whenDequeued_shouldHaveHeadAtSecondNode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.QueueTest.givenTreeNumbers_whenDequeued_shouldHaveHeadAtSecondNode&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -107,51 +163,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StackTest.given3Numbers_whenPushedToStack_shouldPassStackCriteria" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.StackTest.given3Numbers_whenPushedToStack_shouldPassStackCriteria&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="StackTest.givenThreeNumbers_whenPushedToStack_shouldHaveHeadAtTopTailAtBottom" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.brideglabz.datastructuresusinggenerics.StackTest.givenThreeNumbers_whenPushedToStack_shouldHaveHeadAtTopTailAtBottom&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HashMapTest.givenASentence_whenWordsAreAddedToList_shouldReturnWordFrequency" />
+        <item itemvalue="Gradle.QueueTest.givenTreeNumbers_whenDequeued_shouldHaveHeadAtSecondNode" />
         <item itemvalue="Gradle.QueueTest.given3Numbers_whenEnqueued_shouldPassStackCriteria" />
         <item itemvalue="Gradle.StackTest.given3Numbers_whenPoppedFromStackTillEmpty_shouldReturnNull" />
         <item itemvalue="Gradle.StackTest.given3Numbers_whenPeekingIntoStack_shouldReturnFirstElement" />
-        <item itemvalue="Gradle.StackTest.givenThreeNumbers_whenPushedToStack_shouldHaveHeadAtTopTailAtBottom" />
-        <item itemvalue="Gradle.StackTest.given3Numbers_whenPushedToStack_shouldPassStackCriteria" />
       </list>
     </recent_temporary>
   </component>
@@ -167,26 +185,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1602419634601">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602482748213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1602419634601">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602482748213" />
+    <state width="1323" height="348" key="GridCell.Tab.0.bottom" timestamp="1602426691405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1602419634601">
+    <state width="1323" height="348" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602426691405" />
+    <state width="1323" height="348" key="GridCell.Tab.0.center" timestamp="1602426691405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1602419634601">
+    <state width="1323" height="348" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602426691405" />
+    <state width="1323" height="348" key="GridCell.Tab.0.left" timestamp="1602426691405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602419634601" />
-    <state x="319" y="307" width="1063" height="508" key="dock-window-1" timestamp="1602419920501">
+    <state width="1323" height="348" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602426691405" />
+    <state width="1323" height="348" key="GridCell.Tab.0.right" timestamp="1602426691405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="319" y="307" width="1063" height="508" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1602419920501" />
+    <state width="1323" height="348" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602426691405" />
+    <state x="319" y="307" width="1063" height="508" maximized="true" key="dock-window-1" timestamp="1602420335377">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="319" y="307" width="1063" height="508" maximized="true" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1602420335377" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602395141166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
