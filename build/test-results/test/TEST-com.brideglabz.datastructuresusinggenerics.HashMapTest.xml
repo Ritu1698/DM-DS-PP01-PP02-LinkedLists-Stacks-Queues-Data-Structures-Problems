@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.brideglabz.datastructuresusinggenerics.HashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-12T12:14:06" hostname="LAPTOP-RGI87V6B" time="0.007">
+<testsuite name="com.brideglabz.datastructuresusinggenerics.HashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-12T12:25:39" hostname="LAPTOP-RGI87V6B" time="0.006">
   <properties/>
-  <testcase name="givenLargeSentence_whenWordsAddedToList_shouldReturnWordFrequencyOfAParticularWord" classname="com.brideglabz.datastructuresusinggenerics.HashMapTest" time="0.007"/>
+  <testcase name="givenSentence_whenWordIsRemovedFromLinkedList_shouldReturnFrequencyOfDeletedWord" classname="com.brideglabz.datastructuresusinggenerics.HashMapTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

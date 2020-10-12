@@ -14,7 +14,7 @@ public class LinkedListForHashOperation<K, V> {
             this.indexArray.add(null);
     }
 
-    // Get bucket index for given key
+    // Get index for given key
     private int getIndex(K key) {
         int hashCode = Math.abs(key.hashCode());
         int index = hashCode % totalIndexSize;
@@ -46,5 +46,18 @@ public class LinkedListForHashOperation<K, V> {
         } else {
             myMapNode.setValue(value);
         }
+    }
+
+    // Remove key-value pair for a given key
+    public V remove(K key) {
+        int index = getIndex(key);
+        LinkedList<K> linkedList = indexArray.get(index);
+        MapNode<K, V> myMapNode = (MapNode<K, V>) linkedList.searchForNode(key);
+        if (myMapNode != null) {
+            V deletedValue = myMapNode.getValue();
+            linkedList.deleteNode(key);
+            return deletedValue;
+        } else
+            return null;
     }
 }
