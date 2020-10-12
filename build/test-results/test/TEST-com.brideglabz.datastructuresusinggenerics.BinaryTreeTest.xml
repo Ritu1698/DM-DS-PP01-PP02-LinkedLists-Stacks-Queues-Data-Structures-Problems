@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.brideglabz.datastructuresusinggenerics.BinaryTreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-12T13:04:47" hostname="LAPTOP-RGI87V6B" time="0.006">
+<testsuite name="com.brideglabz.datastructuresusinggenerics.BinaryTreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-12T13:11:44" hostname="LAPTOP-RGI87V6B" time="0.006">
   <properties/>
-  <testcase name="given13Numbers_whenAddedToBinarySearchTree_shouldReturnSizeThirteen" classname="com.brideglabz.datastructuresusinggenerics.BinaryTreeTest" time="0.006"/>
+  <testcase name="givenManyNumbers_whenAddedAndKeySearchedInBST_shouldReturnTrueIfPresent" classname="com.brideglabz.datastructuresusinggenerics.BinaryTreeTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
