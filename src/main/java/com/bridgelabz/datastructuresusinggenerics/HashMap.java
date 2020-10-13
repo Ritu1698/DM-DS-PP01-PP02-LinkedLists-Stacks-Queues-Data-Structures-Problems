@@ -10,18 +10,18 @@ public class HashMap<K, V> {
 
     // Get value given Key
     public V get(K key) {
-        MapNode<K, V> myMapNode = (MapNode<K, V>) linkedList.searchForNode(key);
-        return (myMapNode == null) ? null : myMapNode.getValue();
+        MapNode<K, V> mapNode = (MapNode<K, V>) linkedList.searchForNode(key);
+        return (mapNode == null) ? null : mapNode.getValue();
     }
 
-    // Add key-value pair
+    // Add key-value pair to Node
     public void add(K key, V value) {
-        MapNode<K, V> myMapNode = (MapNode<K, V>) linkedList.searchForNode(key);
-        if (myMapNode == null) {
-            myMapNode = new MapNode<K, V>(key, value);
-            linkedList.appendNode(myMapNode);
+        MapNode<K, V> mapNode = (MapNode<K, V>) linkedList.searchForNode(key);
+        if (mapNode == null) {
+            mapNode = new MapNode<K, V>(key, value);
+            linkedList.appendNode(mapNode);
         } else {
-            myMapNode.setValue(value);
+            mapNode.setValue(value);
         }
     }
 }

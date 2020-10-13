@@ -9,17 +9,17 @@ public class HashMapTest {
     @Test
     public void givenSentence_whenWordsAddedToList_shouldReturnWordFrequencyOfAParticularWord() {
         String sentence = "To be or not to be";
-        HashMap<String, Integer> myHashMap = new HashMap<>();
+        HashMap<String, Integer> hashMap = new HashMap<>();
         String[] words = sentence.toLowerCase().split(" ");
         for (String word : words) {
-            Integer value = myHashMap.get(word);
+            Integer value = hashMap.get(word);
             if (value == null)
                 value = 1;
             else
                 value += 1;
-            myHashMap.add(word, value);
+            hashMap.add(word, value);
         }
-        int frequency = myHashMap.get("to");
+        int frequency = hashMap.get("to");
         Assert.assertEquals(2, frequency);
     }
 
@@ -46,14 +46,14 @@ public class HashMapTest {
         LinkedListForHashOperation<String, Integer> linkedListForHashOperation = new LinkedListForHashOperation<>();
         String[] words = sentence.toLowerCase().split(" ");
         for (String word : words) {
-            Integer value =  linkedListForHashOperation.get(word);
+            Integer value = linkedListForHashOperation.get(word);
             if (value == null)
                 value = 1;
             else
                 value += 1;
             linkedListForHashOperation.add(word, value);
         }
-        int frequency =  linkedListForHashOperation.remove("avoidable");
+        int frequency = linkedListForHashOperation.remove("avoidable");
         Assert.assertEquals(1, frequency);
     }
 

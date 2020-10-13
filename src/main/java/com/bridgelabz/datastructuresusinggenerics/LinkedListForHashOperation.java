@@ -27,8 +27,8 @@ public class LinkedListForHashOperation<K, V> {
         LinkedList<K> linkedList = indexArray.get(index);
         if (linkedList == null)
             return null;
-        MapNode<K, V> myMapNode = (MapNode<K, V>) linkedList.searchForNode(key);
-        return (myMapNode == null) ? null : myMapNode.getValue();
+        MapNode<K, V> mapNode = (MapNode<K, V>) linkedList.searchForNode(key);
+        return (mapNode == null) ? null : mapNode.getValue();
     }
 
     // Add to linked hash map
@@ -39,22 +39,22 @@ public class LinkedListForHashOperation<K, V> {
             linkedList = new LinkedList<>();
             indexArray.set(index, linkedList);
         }
-        MapNode<K, V> myMapNode = (MapNode<K, V>) linkedList.searchForNode(key);
-        if (myMapNode == null) {
-            myMapNode = new MapNode<K, V>(key, value);
-            linkedList.appendNode(myMapNode);
+        MapNode<K, V> mapNode = (MapNode<K, V>) linkedList.searchForNode(key);
+        if (mapNode == null) {
+            mapNode = new MapNode<K, V>(key, value);
+            linkedList.appendNode(mapNode);
         } else {
-            myMapNode.setValue(value);
+            mapNode.setValue(value);
         }
     }
 
-    // Remove key-value pair for a given key
+    // Remove K,V for a given K
     public V remove(K key) {
         int index = getIndex(key);
         LinkedList<K> linkedList = indexArray.get(index);
-        MapNode<K, V> myMapNode = (MapNode<K, V>) linkedList.searchForNode(key);
-        if (myMapNode != null) {
-            V deletedValue = myMapNode.getValue();
+        MapNode<K, V> mapNode = (MapNode<K, V>) linkedList.searchForNode(key);
+        if (mapNode != null) {
+            V deletedValue = mapNode.getValue();
             linkedList.deleteNode(key);
             return deletedValue;
         } else

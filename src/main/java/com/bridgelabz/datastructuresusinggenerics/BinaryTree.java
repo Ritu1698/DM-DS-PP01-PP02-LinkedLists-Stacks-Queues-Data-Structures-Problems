@@ -1,6 +1,6 @@
 package com.bridgelabz.datastructuresusinggenerics;
 
-public class BinaryTree <K extends Comparable<K>>{
+public class BinaryTree<K extends Comparable<K>> {
     TreeNode<K> root;
 
     // Add Node to BST
@@ -22,14 +22,17 @@ public class BinaryTree <K extends Comparable<K>>{
         return current;
     }
 
-    // Height Of BST
+    // Count Node Of BST
     public int getSize() {
         return this.getSizeRecursive(root);
     }
 
     // Recursive Function
     private int getSizeRecursive(TreeNode<K> current) {
-        return current == null ? 0 : 1 + getSizeRecursive(current.left) + getSizeRecursive(current.right);
+        if (current == null)
+            return 0;
+        else
+            return 1 + getSizeRecursive(current.left) + getSizeRecursive(current.right);
     }
 
     public boolean search(K key) {
